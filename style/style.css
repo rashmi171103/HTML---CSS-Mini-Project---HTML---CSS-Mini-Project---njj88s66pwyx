@@ -1,0 +1,361 @@
+body{
+    background-color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar-logo */
+#logo {
+    margin: 0px 24px 0px 21px;
+
+}
+
+
+#logo img {
+    height: 72px;
+    margin: 0px 15px;
+    border-radius: 38px;
+    /* transition-property: all;
+        transition-duration: 7s; */
+
+    animation: rotation 2s linear infinite;
+
+
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+/* navigation bar - items */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: .3;
+}
+
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.items {
+    font-size: 1.3rem;
+}
+
+.items a {
+    display: block;
+    padding: 3px 12px;
+    margin: 5px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+
+    /* transition */
+    transition: all;
+    transition-duration: 500ms;
+}
+
+.items a:hover {
+    display: block;
+    padding: 3px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+/* -------------------------------------home section ------------------------------*/
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 435px;
+    padding: 16px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/bgone.jpg) no-repeat center center/cover;
+    /* background: url(/img/foodemoji.png) ; */
+    /* background-color: #8f2bad; */
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+    opacity: .8;
+
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Encode Sans', sans-serif;
+    font-style: italic;
+    font-size: 2.5rem;
+    font-weight: 20%;
+    text-transform: uppercase;
+
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Encode Sans', sans-serif;
+    margin: 5px;
+    font-style: oblique;
+    /* fill: cornflowerblue; */
+    font-weight: 90%;
+}
+
+
+
+
+/* --------------------------order now button  */
+
+.btn {
+    padding: 15px 22px;
+    border: 2px solid white;
+    border-radius: 26px;
+    color: white;
+    background-color: transparent;
+    font-size: 1rem;
+    margin: 14px;
+    cursor: pointer;
+
+    /* transition  */
+    transition: all;
+    transition-duration: 500ms;
+}
+
+.btn:hover {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}
+
+/*----------------- service section  */
+
+
+#services {
+    margin: 0px;
+    display: flex;
+    /* background: url(../img/food1.jpg) center; */
+    /* opacity: .2; */
+    /* z-index: -1; */
+    
+}
+
+#services .box {
+    border: 4px solid #d8254d;
+    /* color: white; */
+    padding: 10px 10px;
+    margin: 10px 13px;
+    text-align: center;
+    border-radius: 60px;
+    background-color: white;
+}
+
+#services .box:hover {
+    box-shadow: 0px 0px 10px 1px #d8254d;
+    transform: scaleY(1.05);
+}
+
+
+#services .box img {
+    height: 110px;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+
+}
+
+.h-secondry {
+    font-size: 2rem;
+    padding: 80px;
+
+}
+
+.center {
+    
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    /* text-decoration: wavys; */
+
+}
+
+.h-primary-center {
+    font-size: 2.6rem;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    /* top: 0;
+        left: 0;
+        right: 0; */
+    text-transform: uppercase;
+    /* color: white; */
+    margin: 0;
+    /* 32px 10px 28px 10px; */
+    font-family: 'Contrail One', cursive;
+    /* background-color: bisque; */
+}
+
+.h-secondry-center {
+    font-family: 'Contrail One', cursive;
+}
+
+
+
+/* ------------------------------form section----------------------- */
+
+#contact {
+    position: relative;
+    /* text-align: center; */
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 105%;
+    z-index: -1;
+    background: url(../img/contact.jpg) center center/cover;
+    opacity: 0.7;
+}
+
+.contactus {
+    font-size: 2.6rem;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(12, 12, 12);
+    margin: 24px 10px 8px 10px;
+    /* background-color: blanchedalmond; */
+    font-family: 'Contrail One', cursive;
+}
+
+
+.formgroup input,
+.btn2 {
+    text-align: center;
+    display: block;
+    width: 43%;
+    margin: 9px auto;
+    color: rgb(209, 30, 30);
+    font-family: 'Carter One', cursive;
+    border-radius: 20px;
+    }
+
+.formgroup input:hover,
+.formgroup input:active {
+    background-color: white;
+    color: black;
+    transform: scale(1.3);
+}
+
+
+::placeholder {
+    color: rgb(214, 93, 93);
+}
+
+
+.btn2 {
+    font-family: 'Carter One', cursive;
+    width: 77px;
+    height: 28px;
+    color: rgb(7, 1, 1);
+    border: 2px solid rgb(8, 8, 8);
+    border-radius: 15px;
+    cursor: pointer;
+    /* margin: auto; */
+    padding: auto;
+}
+
+
+
+.btn2:hover {
+    color: black;
+    background-color: white;
+    transform: scale(1.3);
+}
+
+/* ---------------------------------------client section  */
+
+
+.client-section::before {
+    content: "";
+    position: absolute;
+    background: url(../img/bottombg.jpg);
+    height: 70%;
+    width: 100%;
+    z-index: -5;
+    opacity: .8;
+}
+
+.h-primary-center2 {
+    text-align: center;
+    font-size: 50px;
+    color:wheat;
+    font-family: 'Contrail One', cursive;
+    margin-top: 2.7%;
+}
+
+#Clients {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* margin: -280px 24px 285px 500px; */
+    margin: 20px;
+    padding: 22px
+}
+
+.client-item {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.client-item img {
+    height: 200px;
+    width: 200px;
+    border-radius: 80px;
+    border: solid red;
+}
+
+/* ------------------------------footer section  */
+
+footer {
+    font-family: 'Contrail One', cursive;
+    text-align: center;
+    color: white;
+}
