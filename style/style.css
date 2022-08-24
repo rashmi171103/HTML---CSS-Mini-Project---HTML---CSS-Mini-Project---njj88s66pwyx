@@ -107,18 +107,18 @@ ul {
     position: absolute;
     top: 0;
     left: 0;
-    background: url(../img/bgone.jpg) no-repeat center center/cover;
+    background: url(../img/bgone.webp) no-repeat center center/cover;
     /* background: url(/img/foodemoji.png) ; */
     /* background-color: #8f2bad; */
     width: 100%;
-    height: 90%;
+    height: 86%;
     z-index: -1;
     opacity: .8;
 
 }
 
 #home h1 {
-    color: white;
+    color:black;
     text-align: center;
     font-family: 'Encode Sans', sans-serif;
     font-style: italic;
@@ -129,7 +129,7 @@ ul {
 }
 
 #home p {
-    color: white;
+    color:black;
     text-align: center;
     font-size: 1.2rem;
     font-family: 'Encode Sans', sans-serif;
@@ -146,9 +146,9 @@ ul {
 
 .btn {
     padding: 15px 22px;
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 26px;
-    color: white;
+    color: black;
     background-color: transparent;
     font-size: 1rem;
     margin: 14px;
@@ -247,7 +247,7 @@ ul {
     content: "";
     position: absolute;
     width: 120%;
-    height: 105%;
+    height: 120%;
     z-index: -1;
     background: url(../img/contact.jpg) center center/cover;
     opacity: 0.7;
@@ -315,8 +315,9 @@ ul {
 .client-section::before {
     content: "";
     position: absolute;
-    background: url(../img/bottombg.jpg);
-    height: 70%;
+    /* background: url(../img/bottombg.jpg); */
+    background-color: gainsboro;
+    height: 51%;
     width: 100%;
     z-index: -5;
     opacity: .8;
@@ -325,7 +326,7 @@ ul {
 .h-primary-center2 {
     text-align: center;
     font-size: 50px;
-    color:wheat;
+    color:black;
     font-family: 'Contrail One', cursive;
     margin-top: 2.7%;
 }
@@ -357,5 +358,5 @@ ul {
 footer {
     font-family: 'Contrail One', cursive;
     text-align: center;
-    color: white;
+    color: black;
 }
